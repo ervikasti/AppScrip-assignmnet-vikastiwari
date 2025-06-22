@@ -1,0 +1,39 @@
+.container{
+    margin: 0.5rem;
+    height: 15rem;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.product_img{
+    object-fit:contain;
+    height: 50%;
+    width: 100%;
+    margin: 1px 0;
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 700;
+    size: 1rem;
+    display: inline-block;    
+    max-width: 100%;     
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+

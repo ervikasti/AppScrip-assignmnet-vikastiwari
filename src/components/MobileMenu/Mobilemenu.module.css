@@ -1,0 +1,18 @@
+.mobile_menu{
+    position: fixed;
+    z-index: 110;
+    top:10%;
+    left: 0;
+    background-color: var(--primary-background-color);
+    padding-left: 1rem;
+    font-weight: 300;
+    font-size:medium;
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+.mobile_menu a {
+    min-height:3rem;
+}
+

@@ -1,0 +1,21 @@
+.container{
+    border: none;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.container:focus{
+    outline: none;
+}
+
+/* when dropdown is active */
+.container:active{
+    border-radius: 0px;
+}
+
+:container option{
+    padding: 2rem;
+}
+
+
+
