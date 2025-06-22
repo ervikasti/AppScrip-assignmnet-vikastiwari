@@ -3,7 +3,7 @@ import style from "./Productcard.module.css";
 export const Productcard = () => {
   return (
     <div className={style.container}>
-      <img className={style.product_img} src="/logo512.png" alt="prod-img"/>
+      <img className={style.product_img} src="/logo512.png" alt="prod-img" loading="lazy"/>
       <p className={style.title}>poduct title this is great</p>
       <section className={style.bottom}>
         <p>

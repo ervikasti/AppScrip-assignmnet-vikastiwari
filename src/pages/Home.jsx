@@ -7,6 +7,7 @@ import { Multifilter } from "../components/MultiFilter/MultiFilter";
 import { Dropdown } from "../components/DropDown/Dropdown";
 import { filteroptions } from "../configs/filteroptions";
 import Footer from "../components/Footer/Footer";
+import { Helmet } from "react-helmet";
 
 const heroDetail = {
   title: "DISCOVER OUR PRODUCTS",
@@ -17,6 +18,23 @@ const Home = () => {
   const [isFilterClosed, setFilterClosed] = useState(false);
   return (
     <div>
+      <Helmet>
+        <title>Best E-commerce Store | Buy Products Online</title>
+        <meta
+          name="description"
+          content="Shop the best products online at affordable prices. Free shipping available."
+        />
+          <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Wireless Headphones",
+        "description": "Premium noise-canceling wireless headphones."
+      }
+    `}
+  </script>
+      </Helmet>
       <Header />
       <Hero details={heroDetail} />
       <section className={style.container}>
@@ -27,7 +45,7 @@ const Home = () => {
               className={style.filterbutton}
               onClick={() => setFilterClosed(!isFilterClosed)}
             >
-              {isFilterClosed?'hide filter':'show filter'}
+              {isFilterClosed ? "hide filter" : "show filter"}
             </button>
           </section>
 
@@ -52,7 +70,7 @@ const Home = () => {
           </main>
         </section>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
